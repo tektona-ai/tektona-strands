@@ -5,8 +5,7 @@
   "packages": {
     ".": {
       "release-type": "node",
-      "package-name": "@tektona/strands",
-      "release-as": "0.1.0"
+      "package-name": "@tektona/strands"
     }
   }
 }
