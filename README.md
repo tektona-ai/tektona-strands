@@ -89,6 +89,13 @@ npm test                  # unit tests
 npm run test:integration  # needs TEKTONA_API_KEY, TEKTONA_ORG, TEKTONA_PROJECT, TEKTONA_TEST_SANDBOX
 ```
 
+## Release
+
+Commits on `main` follow [Conventional Commits](https://www.conventionalcommits.org). release-please keeps a
+release PR open with the next version and the changelog. Merging it tags the version and creates the GitHub
+release. The npm publish then waits for an approval and runs with npm trusted publishing, so the repository
+holds no npm token.
+
 ## License
 
 MIT
