@@ -1,0 +1,17 @@
+{
+  "name": "tektona-strands-example-subagent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@strands-agents/sdk": "^1.24.0",
+    "@tektona/sdk": "^0.8.0",
+    "@tektona/strands": "file:../..",
+    "openai": "^6.45.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0"
+  }
+}

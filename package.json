@@ -1,0 +1,46 @@
+{
+  "name": "@tektona/strands",
+  "version": "0.1.0",
+  "description": "Run Strands Agents commands and file operations in a Tektona sandbox.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "typecheck:examples": "tsc -p examples/tsconfig.json",
+    "check:package": "npm run build && publint && attw --pack --profile esm-only",
+    "prepublishOnly": "npm run check:package"
+  },
+  "peerDependencies": {
+    "@strands-agents/sdk": ">=1.24.0",
+    "@tektona/sdk": ">=0.8.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@strands-agents/sdk": "^1.24.0",
+    "@tektona/sdk": "^0.8.0",
+    "@types/node": "^22.0.0",
+    "openai": "^6.49.0",
+    "publint": "^0.3.25",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0"
+  }
+}
