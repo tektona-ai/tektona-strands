@@ -3,6 +3,17 @@
   "version": "0.1.0",
   "description": "Run Strands Agents commands and file operations in a Tektona sandbox.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tektona-ai/tektona-strands.git"
+  },
+  "homepage": "https://github.com/tektona-ai/tektona-strands#readme",
+  "bugs": {
+    "url": "https://github.com/tektona-ai/tektona-strands/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
